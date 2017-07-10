@@ -1,5 +1,6 @@
 # LiquidFillGauge
 A LiquidFillGauge with D3.js v4
+![](http://ocm1e5iqa.bkt.clouddn.com/liquidFillgauge.gif)
 
 **use case:**
 ```
