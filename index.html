@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./lib/d3.min.js"></script>
+  <script src="./liquidFillGauge.js"></script>
+  <style>
+        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+    </style>
+</head>
+<body>
+  <svg id="fillgauge" width="400" height="250"></svg>
+  <script language="JavaScript">
+    const gauge = new LiquidFillGauge("fillgauge", 50)
+    gauge.render()
+    setTimeout(() => {
+      gauge.update(75.5)
+    }, 1000)
+  </script>
+</body>
+</html>
